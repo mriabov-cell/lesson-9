@@ -1,0 +1,13 @@
+import math
+
+a = float(input("Введіть перший катет (a): "))
+b = float(input("Введіть другий катет (b): "))
+
+if a > 0 and b > 0:
+    c = math.sqrt(a**2 + b**2)
+    perimeter = a + b + c
+    print(f"Прямокутний трикутник існує.")
+    print(f"Гіпотенуза: {c:.2f}")
+    print(f"Периметр трикутника: {perimeter:.2f}")
+else:
+    print("Трикутник не існує! Катети мають бути більшими за 0.")
