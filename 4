@@ -1,0 +1,15 @@
+number = int(input("Введіть двоцифрове число (від 10 до 99): "))
+
+if 10 <= abs(number) <= 99:
+    num = abs(number)
+    tens = num // 10
+    units = num % 10
+    digit_sum = tens + units
+    digit_prod = tens * units
+
+    print(f"Кількість десятків: {tens}")
+    print(f"Кількість одиниць: {units}")
+    print(f"Сума цифр: {digit_sum}")
+    print(f"Добуток цифр: {digit_prod}")
+else:
+    print("Введено не двоцифрове число!")
